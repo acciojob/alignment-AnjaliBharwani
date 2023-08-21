@@ -1,74 +1,86 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Assignment 3</title>
+  <style>
+    .middle {
+      text-align: center;
+      vertical-align: middle;
+    }
+    .center {
+      text-align: center;
+    }
+    .right {
+      text-align: right;
+    }
+    .green {
+      background-color: green;
+    }
+    .blue {
+      background-color: blue;
+    }
+    table {
+      border: 1px solid black;
+      border-spacing: 1px;
+    }
+    td {
+      padding: 1px;
+    }
+  </style>
 </head>
-
-<style>
-		body{
-			background-color: rgb(204, 204, 204)
-		}
-		h1,h2{
-			text-align:center
-		}
-		.player_one{
-			width:100%;
-			height:125px;
-			border:1px solid black;
-			background-color:white;
-			border-radius:10px
-		}
-		li{
-			list-style-type: none;
-		}
-		a{
-			text-decoration-line: none;
-		}
-		.player_two{
-			width:100%;
-			height:100%;
-			border:1px solid black;
-			background-color:white;
-			border-radius:10px;
-			padding:10px;
-			margin-left:20px;
-			margin-right:20px;
-		}
-	</style>
-</head>
-
 <body>
-	<h1>My Playlist</h1>
-	<div class="player_one">
-		<ul>
-			<li><a href="https://www.youtube.com/watch?v=80Ukj9Y2LRQ" target="_blank">Song 1</a></li>
-			<li><a href="https://www.youtube.com/watch?v=EiMX1G8pnYA" target="_blank">Song 2</a></li>
-			<li><a href="https://www.youtube.com/watch?v=V5En3Ks3OjE" target="_blank">Song 3</a></li>
-			<li><a href="https://www.youtube.com/watch?v=-uqc-GiXIzQ" target="_blank">Song 4</a></li>
-			<li><a href="https://www.youtube.com/watch?v=FeA4PcgeShQ" target="_blank">Song 5</a></li>
-		</ul>
-	</div>
-	<h2>Now Playing...</h2>
-	<div class="player_two">
-	<div class="video1">
-		<video width="100%" height="100%"controls>	
-			<source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
-		</video>
-	</div>
-	<h2>MP3 songs</h2>
-	<p>Maan Meri Jaan</p>
-	<div>
-		<audio width=100% controls>
-			<source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" type="audio/ogg">
-		</audio>
-	</div>
-	</div>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+  <h1 style="text-align: center;">HTML Assignment #3</h1>
+
+  <!-- Table 1 -->
+  <table class="middle" id="table-1">
+    <tr>
+      <td id="t11">Row 1, Column 1</td>
+      <td id="t12">Row 1, Column 2</td>
+      <td id="t13">Row 1, Column 3</td>
+    </tr>
+    <tr id="t11">
+      <td>Row 1, Column 1</td>
+      <td>Row 1, Column 2</td>
+      <td>Row 1, Column 3</td>
+    </tr> 
+	  <tr id="t12">
+      <td>Row 1, Column 1</td>
+      <td>Row 1, Column 2</td>
+      <td>Row 1, Column 3</td>
+	  </tr td=t13>
+  </table>
+
+  <!-- Table 2 -->
+  <table class="middle" id="table-2">
+    <tr>
+      <td id="t21" colspan="6">Row 1, Colspan 6</td>
+      <td id="t22">Row 2, Column 1</td>
+      <td id="t23">Row 2, Column 2</td>
+      <td id="t24">Row 2, Column 3</td>
+      <td id="t25">Row 2, Column 4</td>
+      <td id="t26">Row 2, Column 5</td>
+      <td id="t27">Row 2, Column 6</td>
+    </tr>
+	  <tr>
+		  
+	  </tr>
+    <!-- Add more rows as needed -->
+  </table>
+
+  <!-- Table 3 -->
+  <table class="middle" id="table-3">
+    <tr class="green">
+      <td colspan="3">Green Row</td>
+    </tr>
+    <tr>
+      <td id="t-image" colspan="3"><img src="https://www2.d125.org/applied_arts/teched/courses/WEB/portfolios/2013_FallP3/Luthra%20Portfolio/images-1.jpeg" alt="Sample Image"></td>
+    </tr>
+    <tr class="blue">
+      <td colspan="3">Blue Row</td>
+    </tr>
+  </table>
 
 </body>
-
 </html>
