@@ -1,86 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HTML Assignment 3</title>
-  <style>
-    .middle {
-      text-align: center;
-      vertical-align: middle;
-    }
-    .center {
-      text-align: center;
-    }
-    .right {
-      text-align: right;
-    }
-    .green {
-      background-color: green;
-    }
-    .blue {
-      background-color: blue;
-    }
-    table {
-      border: 1px solid black;
-      border-spacing: 1px;
-    }
-    td {
-      padding: 1px;
-    }
-  </style>
+	<link rel="stylesheet" href="styles.css">
+		<title>HTML Assignment 3</title>
+	<style>
+		body{
+			text-align:center;
+		}
+		#table-1{
+			border:1px solid black;
+			width:100%;
+			border-collapse:collapse;
+		}
+		#table-1 td{
+			border:1px solid black;
+			padding:1px;
+			margin:1px;
+		}
+		#table-2{
+			margin-top:50px;
+			border:1px solid black;
+			width:100%;
+			height:120px;
+		}
+		#table-2 td{
+			border:1px solid black;
+			padding:1px;
+			margin:1px;
+		}
+		#table-3{
+			margin-top:50px;
+			border:1px solid black;
+			width:100%;
+			height:120px;
+			border-collapse:collapse;
+		}
+		#table-3 td{
+			border:1px solid black;
+			padding:1px;
+			margin:1px;
+		}
+		
+	</style>
 </head>
+
 <body>
-  <h1 style="text-align: center;">HTML Assignment #3</h1>
-
-  <!-- Table 1 -->
-  <table class="middle" id="table-1">
-    <tr>
-      <td id="t11">Row 1, Column 1</td>
-      <td id="t12">Row 1, Column 2</td>
-      <td id="t13">Row 1, Column 3</td>
-    </tr>
-    <tr id="t11">
-      <td>Row 1, Column 1</td>
-      <td>Row 1, Column 2</td>
-      <td>Row 1, Column 3</td>
-    </tr> 
-	  <tr id="t12">
-      <td>Row 1, Column 1</td>
-      <td>Row 1, Column 2</td>
-      <td>Row 1, Column 3</td>
-	  </tr td=t13>
-  </table>
-
-  <!-- Table 2 -->
-  <table class="middle" id="table-2">
-    <tr>
-      <td id="t21" colspan="6">Row 1, Colspan 6</td>
-      <td id="t22">Row 2, Column 1</td>
-      <td id="t23">Row 2, Column 2</td>
-      <td id="t24">Row 2, Column 3</td>
-      <td id="t25">Row 2, Column 4</td>
-      <td id="t26">Row 2, Column 5</td>
-      <td id="t27">Row 2, Column 6</td>
-    </tr>
-	  <tr>
-		  
-	  </tr>
-    <!-- Add more rows as needed -->
-  </table>
-
-  <!-- Table 3 -->
-  <table class="middle" id="table-3">
-    <tr class="green">
-      <td colspan="3">Green Row</td>
-    </tr>
-    <tr>
-      <td id="t-image" colspan="3"><img src="https://www2.d125.org/applied_arts/teched/courses/WEB/portfolios/2013_FallP3/Luthra%20Portfolio/images-1.jpeg" alt="Sample Image"></td>
-    </tr>
-    <tr class="blue">
-      <td colspan="3">Blue Row</td>
-    </tr>
-  </table>
-
+	<!-- the entire body must be written by student -->
+	<h1>HTML Assignment #3</h1>
+	<!-- Table	1 -->
+	<table class="middle" id="table-1">
+		<tr>
+			<td id="t11" style="text-align:left">left</td>
+			<td id="t12" class="center" style="text-align:center">center</td>
+			<td class="right" id="t13" style="text-align:right">right</td>
+		</tr>
+		<tr class="center">
+			<td style="text-align:left">left</td>
+			<td style="text-align:center">center</td>
+			<td class="right" style="text-align:right">right</td>
+		</tr>
+		<tr>
+			<td style="text-align:left">left</td>
+			<td style="text-align:center">center</td>
+			<td class="right" style="text-align:right">right</td>
+		</tr>
+	</table>
+    <!-- Table    2 -->
+	<table class="middle" id="table-2">
+		<tr>
+			<td id="t21" colspan="6"></td>
+		</tr>
+		<tr>
+			<td rowspan="4"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td rowspan="2" colspan="3"></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td colspan="6"></td>
+		</tr>
+	</table>
+<!-- Table	3 -->
+	<table class="middle" id="table-3">
+		<tr height=15>
+	        <td style="background-color:green" colspan="6">
+			</td>
+		</tr>
+		<tr>
+	        <td id="t-image" colspan="6">
+				<img src="https://www2.d125.org/applied_arts/teched/courses/WEB/portfolios/2013_FallP3/Luthra%20Portfolio/images-1.jpeg" alt="an img" height=100px>
+			</td>
+		</tr>
+		<tr height=15>
+	        <td style="background-color:blue" colspan="6">
+				
+			</td>
+		</tr>
+	</table>
 </body>
+
 </html>
